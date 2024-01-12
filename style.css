@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333;
+}
+
+.container {
+  padding: 30px 40px;
+  height: auto;
+  width: 80vw;
+  margin-top: 30px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background: rebeccapurple;
+  color: #fff;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 36px;
+}
+
+.text {
+  width: 100%;
+}
+
+.text h3 {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btns button {
+  height: 35px;
+  width: 30%;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.full {
+  background: #0000ff;
+}
+
+.date {
+  background: #008800;
+}
+
+.time {
+  background: #ff0000;
+}
+
+.btns button:hover {
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.full:hover {
+  background: #0000aa;
+}
+
+.date:hover {
+  background: #006600;
+}
+
+.time:hover {
+  background: #aa0000;
+}
+
+@media (max-width: 375px) {
+  .container {
+    padding: 20px 30px;
+    width: 90vw;
+  }
+
+  .container h1 {
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+
+  .text h3 {
+    font-size: 20px;
+  }
+
+  .btns button {
+    width: 32%;
+    font-size: 14px;
+  }
+}
